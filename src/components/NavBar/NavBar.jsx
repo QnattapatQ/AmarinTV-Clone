@@ -15,7 +15,7 @@ const NavBar = () => {
                     </div>
                     <div className='pt-1 pb-[15px] pr-[15px]'>
                         <a className='h-[30px] bg-[#f2f2f2] rounded-[2px] py-[1px] px-[10px] block mt-[10px] flex justify-center items-center' href="#">
-                            <img className='max-w-[70px] w-full' src={spotlight} alt="" />
+                            <img className='min-w-[70px] max-w-[70px] w-full' src={spotlight} alt="" />
                         </a>
                     </div>
                 </div>
