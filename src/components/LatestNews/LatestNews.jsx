@@ -33,7 +33,7 @@ const LatestNews = () => {
                 <div className='mt-8'>
                     <div className='grid grid-cols-4 gap-6 max-768:grid-cols-2 max-768:gap-3'>
                         {latestNewsData?.slice(0, refetchNews)?.map((news, index) =>  (
-                            <div className={`${news.newsDesc !== '' ? 'row-span-2 col-span-2' : ''} border border-[#f3f3f3] rounded-md overflow-hidden`} key={index}>
+                            <div className={`${news.newsDesc !== '' ? 'row-span-2 col-span-2' : ''} border border-[#f3f3f3] rounded-md overflow-hidden hover:translate-y-[-5px] duration-300`} key={index}>
                                 <div>
                                     <img src={news.newsCover} alt="" />
                                 </div>

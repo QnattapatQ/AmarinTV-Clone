@@ -8,7 +8,7 @@ const LiveSteamSection = () => {
         <div className="bg-[url('./assets/bg_10year.jpg')] bg-cover bg-no-repeat bg-center py-[60px] max-768:py-[25px] px-4">
             <div className='max-w-[1170px] max-1200:max-w-[970px] max-992:max-w-[750px] w-full mx-auto my-[50px] max-992:my-0'>
                 <div className='grid grid-cols-[280px_1fr] h-full gap-5 max-992:flex max-992:flex-col'>
-                    <div className='้'>
+                    <div className=''>
                         <img className='max-992:hidden' src={icon_amarin_live} alt="" />
                         <div className='pt-4 flex flex-col gap-4'>
                             <div className='max-992:hidden'>
@@ -36,7 +36,7 @@ const LiveSteamSection = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                        <img className='w-full object-cover absolute bottom-0 max-992:static' src={screen_live_img} alt="" />
+                        <img className='w-full h-full object-cover absolute bottom-0 max-992:static' src={screen_live_img} alt="" />
                     </div>
                     <div className='hidden max-992:block'>
                         <div className='w-full flex justify-between items-center'>

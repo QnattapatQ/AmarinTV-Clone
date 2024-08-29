@@ -1,3 +1,4 @@
+import CelebrityNews from "./components/CelebrityNews/CelebrityNews.jsx";
 import LatestNews from "./components/LatestNews/LatestNews.jsx";
 import LiveSteamSection from "./components/LiveSteamSection/LiveSteamSection"
 import NavBar from "./components/NavBar/NavBar"
@@ -11,6 +12,7 @@ function App() {
                 <NavBar/>
                 <LiveSteamSection/>
                 <LatestNews/>
+                <CelebrityNews/>
             </div>
         </ScreenWidthProvider>
     )
