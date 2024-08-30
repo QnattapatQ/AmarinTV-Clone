@@ -1,5 +1,6 @@
 import React from 'react';
 import spotlight from '../../assets/spotlight.svg';
+import spotlightNews from './spotlightNews.js';
 
 
 const SpotlightNews = () => {
@@ -16,7 +17,32 @@ const SpotlightNews = () => {
                         <button className='bg-gradient-to-r from-[#143496] to-[#5677de] text-white py-2 px-[30px] rounded'>ดูทั้งหมด</button>
                     </div>
                 </div>
-                SpotlightNews
+               <div className='flex'>
+                    <div className='w-[66.67%] bg-red-500 grid grid-cols-4'>
+                        {spotlightNews.map((news, index) => (
+                            <div className={`${news.newsDesc !== "" ? 'col-span-4' : ''}`} key={index}>
+                                {news.isVideo === false && (
+                                    <div>
+                                        <img src={news.newsCover} alt="" />
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                    <div className='w-[33.33%] bg-blue-500'>
+                        <div className='flex flex-col'>
+                            {spotlightNews.map((news, index) => (
+                                <div className='' key={index}>
+                                    {news.isVideo && (
+                                        <div>
+                                            <img src={news.newsCover} alt="" />
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+               </div>
             </div>
         </div>
     )
