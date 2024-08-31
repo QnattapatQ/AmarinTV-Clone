@@ -8,7 +8,7 @@ const LatestNews = () => {
 
     const [refetchNews, setRefetchNews] = useState(0);
 
-    console.log(width)
+    // console.log(width)
 
     useEffect(() => {
 
