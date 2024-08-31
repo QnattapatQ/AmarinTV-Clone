@@ -45,47 +45,55 @@ const SpotlightNews = () => {
                         <button className='bg-gradient-to-r from-[#143496] to-[#5677de] text-white py-2 px-[30px] rounded'>ดูทั้งหมด</button>
                     </div>
                 </div>
-               <div className='flex gap-4 bg-yellow-300'>
-                    <div className='basis-[66.67%] bg-red-500 grid grid-cols-4 gap-4'>
+               <div className='flex gap-4 bg-red-500'>
+                    <div className='basis-[66.67%] grid grid-cols-4 gap-4'>
                         {newsContent?.map((news, index) => (
-                            <div className={`${news.newsDesc !== "" ? 'col-span-4 bg-green-500' : ''}`} key={index}>
-                                {news.isVideo === false && (
-                                    <div className={`${news.newsDesc !== "" ? 'flex flex-row-reverse' : ''}`}>
-                                        <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''} h-full`}>
-                                            <img className='h-full' src={news.newsCover} alt="" /> 
-                                        </div>
-                                        <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''}`}>
-                                            <div>
-
-                                            </div>
-                                            <div>
-                                                <h3 className='text-base line-clamp-2'>{news.newsTopic}</h3>
-                                            </div>
-                                        </div>
+                            <div className={`${news.newsDesc !== "" ? 'col-span-4' : ''}`} key={index}>
+                                <div className={`${news.newsDesc !== "" ? 'flex flex-row-reverse' : ''} gap-4`}>
+                                    <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''} h-full rounded-md overflow-hidden`}>
+                                        <img className='h-full' src={news.newsCover} alt="" /> 
                                     </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                    <div className='basis-[33.33%] bg-blue-500 h-full'>
-                        <div>
-                            <h1 className='text-[22px]'>วีดีโอ</h1>
-                        </div>
-                        <div className='flex flex-col justify-between bg-yellow-400'>
-                            {newsVideo?.map((news, index) => (
-                                <div className='py-1' key={index}>
-                                    <div className='flex gap-3'>
-                                        <div className='basis-1/2'>
-                                            <img src={news.newsCover} alt="" />
+                                    <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''} relative`}>
+                                        <div className='relative'>
+                                            <p className={`${news.newsDesc === "" ? 'my-[10px]' : ''} text-[13px] text-[#143496] font-medium before:absolute before:left-0 before:top-1/2 before:w-[12px] before:h-[2px] before:bg-[#e1d732] before:block pl-4`}>{news.newsTag}</p>
                                         </div>
-                                        <div className='basis-1/2'>
-                                            <div>
-                                                <h3 className='line-clamp-2'>{news.newsTopic}</h3>
+                                        <div>
+                                            <div className='my-2'>
+                                                <h3 className={`${news.newsDesc === "" ? 'text-[15px] font-semibold' : 'text-[20px]'} line-clamp-2 font-semibold`}>{news.newsTopic}</h3>
+                                            </div>
+                                            <div className='line-clamp-2 text-sm text-[#212121]'>
+                                                {news.newsDesc}
+                                            </div>
+                                            <div className='mt-[10px] text-xs text-[#212121]'>
+                                                {news.newsDate}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                        ))}
+                    </div>
+                    <div className='basis-[33.33%] bg-blue-500 h-full'>
+                        <div className='flex justify-between flex-col h-full'>
+                            <div>
+                                <h1 className='text-[22px]'>วีดีโอ</h1>
+                            </div>
+                            <div className='flex flex-col justify-between h-full'>
+                                {newsVideo?.map((news, index) => (
+                                    <div className='py-1' key={index}>
+                                        <div className='flex gap-3'>
+                                            <div className='basis-1/2'>
+                                                <img src={news.newsCover} alt="" />
+                                            </div>
+                                            <div className='basis-1/2'>
+                                                <div>
+                                                    <h3 className='line-clamp-2'>{news.newsTopic}</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                </div>
