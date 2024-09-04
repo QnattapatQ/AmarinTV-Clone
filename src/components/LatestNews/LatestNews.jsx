@@ -24,8 +24,8 @@ const LatestNews = () => {
             <div className='max-w-[1170px] max-1200:max-w-[970px] max-992:max-w-[750px] w-full mx-auto pt-4 pb-[60px]'>
                 <div className='w-full flex justify-between items-center border-b pb-2 relative'>
                     <div className='after:absolute after:border-b-[6px] after:rounded-sm after:right-0 after:left-0 
-                    after:bottom-[-3px] after:w-[145px] after:max-768:w-[135px] after:border-yellow-400 
-                    after:max-768:border-b-[3px] after:max-768:bottom-[-2px]
+                                    after:bottom-[-3px] after:w-[145px] after:max-768:w-[135px] after:border-yellow-400 
+                                    after:max-768:border-b-[3px] after:max-768:bottom-[-2px]
                 '>
                         <h2 className='text-[38px] font-semibold max-768:text-2xl'>ข่าวล่าสุด</h2>
                     </div>
