@@ -11,7 +11,7 @@ const OlympicNews = () => {
             </div>
             <div className='max-w-[1170px] max-1200:max-w-[970px] max-992:max-w-[750px] w-full mx-auto'>
                 <div className='grid grid-cols-[1fr_380px] gap-[30px] px-[15px] h-full'>
-                    <div className='bg-blue-500'>
+                    <div className=''>
                         <div className=''>
                             <img src={logo_paralympic} alt="" />
                         </div>
@@ -32,9 +32,17 @@ const OlympicNews = () => {
                                                 <p className={`${index === 0 ? 'mt-4' : 'mt-[3px]'} text-[#555] font-light text-xs`}>{news.newsDate}</p>
                                             </div>
                                         </div>
+                                        <span className={`
+                                            ${index + 1 !== olympicNews.length ? 'h-[1px] w-full bg-[#00000050] block mt-2' : ''}
+                                            ${index === 0 ? 'h-[0px]' : ''} `}></span>
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                        <div className='w-full text-center my-[10px]'>
+                            <a href="#">
+                                <button className='bg-white py-2 px-[30px] text-base font-semibold rounded-md'>ดูทั้งหมด</button>
+                            </a>
                         </div>
                     </div>
                     <div className='bg-red-500'>
