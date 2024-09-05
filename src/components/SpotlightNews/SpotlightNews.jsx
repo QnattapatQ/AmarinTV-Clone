@@ -78,10 +78,10 @@ const SpotlightNews = () => {
                                             <div className='my-2'>
                                                 <h3 className={`${news.newsDesc === "" ? 'text-[15px] font-semibold' : 'text-[20px]'} line-clamp-2 font-semibold`}>{news.newsTopic}</h3>
                                             </div>
-                                            <div className='line-clamp-2 text-sm text-[#212121]'>
+                                            <div className='line-clamp-2 text-[#555] font-light text-sm'>
                                                 {news.newsDesc}
                                             </div>
-                                            <div className='mt-[10px] text-xs text-[#212121]'>
+                                            <div className='mt-[10px] text-xs text-[#555] font-light'>
                                                 {news.newsDate}
                                             </div>
                                         </div>
