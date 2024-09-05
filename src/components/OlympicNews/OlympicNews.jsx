@@ -19,9 +19,9 @@ const OlympicNews = () => {
                             <h2 className='text-2xl text-center font-bold mb-[10px] mt-[20px]'>ข่าวพาราลิมปิก 2024</h2>
                             <div className='bg-white rounded-md p-4 grid grid-cols-2 gap-x-6 gap-y-2'>
                                 {olympicNews.map((news, index) => (
-                                    <div className={`${index === 0 ? 'row-span-4' : ''}`} key={index}>
-                                        <div className={`${index !== 0 ? 'grid grid-cols-[50%_auto] gap-4' : ''}`}>
-                                            <div>
+                                    <div className={`${index === 0 ? 'row-span-4' : ''} `} key={index}>
+                                        <div className={`${index !== 0 ? 'grid grid-cols-[50%_auto] gap-4' : ''} `}>
+                                            <div className='rounded-md overflow-hidden'>
                                                 <img className='size-full' src={news.newsImage} alt="" />
                                             </div>
                                             <div className={`${index === 0 ? 'mt-[10px]' : ''} `}>
