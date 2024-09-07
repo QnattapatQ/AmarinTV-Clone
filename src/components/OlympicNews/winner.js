@@ -1,5 +1,81 @@
 const winnerTitle = [
     {
-        
+        country: "จีน",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "สหราชอาณาจักร",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "สหรัฐอเมริกา",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "เนเธอร์แลนด์",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "อิตาลี",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "บราซิล",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "ฝรั่งเศส",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "ยูเครน",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "ออสเตรเลีย",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "ญี่ปุ่น",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
+    },
+    {
+        country: "ไทย",
+        gold: "86",
+        silver: "65",
+        copper: "45",
+        total: "196",
     },
 ];
+
+export default winnerTitle;

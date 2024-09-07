@@ -1,7 +1,11 @@
 import React from 'react'
 import bg_olympic from '../../assets/OlympicNews/bg_olympic.png';
 import logo_paralympic from '../../assets/OlympicNews/logo_paralympic.svg';
+import gold from '../../assets/OlympicNews/gold.png';
+import silver from '../../assets/OlympicNews/silver.png';
+import copper from '../../assets/OlympicNews/copper.png';
 import olympicNews from './olympicNews.js';
+import winnerTitle from './winner.js';
 
 const OlympicNews = () => {
     return (
@@ -46,9 +50,42 @@ const OlympicNews = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='bg-red-500'>
+                    <div className=''>
                         <div>
-
+                            <h3 className='bg-[#30155E] py-[10px] text-3xl rounded-lg text-white text-center font-semibold mb-[5px]'>สรุปอันดับเหรียญ</h3>
+                            <ul>
+                                <li className='flex bg-gradient-to-b from-[#7d84c2] to-[#fba9cb] rounded-[4px]'>
+                                    <div className='w-[40%] flex items-center justify-center text-sm font-medium'>อันดับ</div>
+                                    <div className='w-[15%] flex justify-center items-center border-x mr-[-1px]'>
+                                        <img className='object-contain pb-[5px] size-[46px]' src={gold} alt="" />
+                                    </div>
+                                    <div className='w-[15%] flex justify-center items-center border-x'>
+                                        <img className='object-contain pb-[5px] size-[46px]' src={silver} alt="" />   
+                                    </div>
+                                    <div className='w-[15%] flex justify-center items-center border-x ml-[-1px]'>
+                                        <img className='object-contain pb-[5px] size-[46px]' src={copper} alt="" />   
+                                    </div>
+                                    <div className='w-[15%] flex items-center justify-center text-sm font-medium'>รวม</div>
+                                </li>
+                                {winnerTitle.map((coin, index) => (
+                                     <li className={`${coin.country === "ไทย" ? "bg-[#550FB6] text-white" : ""} flex odd:bg-[#dbdbdb] bg-white mt-[2px] rounded-[4px]`} key={index}>
+                                        <div className='w-[40%] flex items-center text-xs py-[10px] px-[5px]'>
+                                            <span className='size-[30px] flex items-center justify-center'>{index + 1}</span>
+                                            <p>{coin.country}</p>
+                                        </div>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white mr-[-1px] py-[10px] px-[5px] text-[15px]'>
+                                            {coin.gold}
+                                        </div>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white py-[10px] px-[5px] text-[15px]'>
+                                            {coin.silver}  
+                                        </div>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white ml-[-1px] py-[10px] px-[5px] text-[15px]'>
+                                            {coin.copper}
+                                        </div>
+                                        <div className='w-[15%] flex items-center justify-center py-[10px] px-[5px] text-[15px]'>{coin.total}</div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
