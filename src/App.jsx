@@ -1,6 +1,7 @@
 import CelebrityNews from "./components/CelebrityNews/CelebrityNews.jsx";
 import LatestNews from "./components/LatestNews/LatestNews.jsx";
 import LiveSteamSection from "./components/LiveSteamSection/LiveSteamSection"
+import LotterySection from "./components/LotterySection/LotterySection.jsx";
 import NavBar from "./components/NavBar/NavBar"
 import OlympicNews from "./components/OlympicNews/OlympicNews.jsx";
 import SpotlightNews from "./components/SpotlightNews/SpotlightNews.jsx";
@@ -17,6 +18,7 @@ function App() {
                 <SpotlightNews/>
                 <CelebrityNews/>
                 <OlympicNews/>
+                <LotterySection/>
             </div>
         </ScreenWidthProvider>
     )

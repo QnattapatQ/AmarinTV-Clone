@@ -81,16 +81,16 @@ const OlympicNews = () => {
                                             <span className='size-[30px] flex items-center justify-center'>{index + 1}</span>
                                             <p>{coin.country}</p>
                                         </div>
-                                        <div className='w-[15%] flex justify-center items-center border-x border-white mr-[-1px] py-[10px] px-[5px] text-[15px]'>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white mr-[-1px] py-[10px] px-[5px] text-[15px] font-medium'>
                                             {coin.gold}
                                         </div>
-                                        <div className='w-[15%] flex justify-center items-center border-x border-white py-[10px] px-[5px] text-[15px]'>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white py-[10px] px-[5px] text-[15px] font-medium'>
                                             {coin.silver}  
                                         </div>
-                                        <div className='w-[15%] flex justify-center items-center border-x border-white ml-[-1px] py-[10px] px-[5px] text-[15px]'>
+                                        <div className='w-[15%] flex justify-center items-center border-x border-white ml-[-1px] py-[10px] px-[5px] text-[15px] font-medium'>
                                             {coin.copper}
                                         </div>
-                                        <div className='w-[15%] flex items-center justify-center py-[10px] px-[5px] text-[15px]'>{coin.total}</div>
+                                        <div className='w-[15%] flex items-center justify-center py-[10px] px-[5px] text-[15px] font-medium'>{coin.total}</div>
                                     </li>
                                 ))}
                             </ul>
