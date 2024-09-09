@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaCaretDown } from "react-icons/fa";
 
 const LotterySection = () => {
     return (
@@ -50,9 +51,20 @@ const LotterySection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[60%] bg-red-200 rounded-md'>
+                        <div className='w-[60%] bg-red-200 rounded-md overflow-hidden'>
                             <div>
+                                <div className='border-t-[6px] border-[#80389f]'>
+                                    <div className='bg-white rounded mt-[-1px] pt-[10px] pb-[20px] px-[40px]'>
+                                        <h4 className='text-[20px] text-center font-semibold'>ตรวจผลสลากกินแบ่งรัฐบาล</h4>
+                                        <div className='mt-2 border border-black px-[20px]  rounded-full max-w-[200px] w-full h-[30px] mx-auto flex justify-between items-center'>
+                                            <p className='text-sm font-light text-nowrap'>งวดที่ 1 กันยายน 2567</p>
+                                            <FaCaretDown/>
+                                        </div>
+                                        <div>
 
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
