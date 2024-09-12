@@ -1,4 +1,5 @@
 import React from 'react'
+import dramasData from './dramasData'
 
 const DramasSection = () => {
     return (
@@ -10,6 +11,20 @@ const DramasSection = () => {
                     </div>
                     <div className='max-768:hidden'>
                         <button className='bg-gradient-to-r from-[#ff7b00] to-[#ffb200] text-white py-2 px-[30px] rounded'>ดูทั้งหมด</button>
+                    </div>
+                </div>
+                <div>
+                    <div className='grid grid-cols-2 gap-5'>
+                        {dramasData.map((data, index) => (
+                            <div className={`${data.dramaDesc !== "" ? 'row-span-2' : ''}`} key={index}>
+                                <div>
+                                    <img src={data.dramaImage} alt="" />
+                                </div>
+                                <div>
+                                    <h3>{data.dramaName}</h3>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
