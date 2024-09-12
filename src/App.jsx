@@ -1,4 +1,5 @@
 import CelebrityNews from "./components/CelebrityNews/CelebrityNews.jsx";
+import DramasSection from "./components/Dramas/DramasSection.jsx";
 import LatestNews from "./components/LatestNews/LatestNews.jsx";
 import LiveSteamSection from "./components/LiveSteamSection/LiveSteamSection"
 import LotterySection from "./components/LotterySection/LotterySection.jsx";
@@ -19,6 +20,7 @@ function App() {
                 <CelebrityNews/>
                 <OlympicNews/>
                 <LotterySection/>
+                <DramasSection/>
             </div>
         </ScreenWidthProvider>
     )
