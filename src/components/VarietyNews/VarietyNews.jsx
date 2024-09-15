@@ -14,14 +14,16 @@ const VarietyNews = () => {
                     </div>
                 </div>
                 <div className='mt-6'>
-                    <div className='grid grid-cols-2 gap-5'>
+                    <div className='grid grid-cols-2 gap-x-7 gap-y-5'>
                         {varietyNews.map((news, index) => (
-                            <div className={`${index === 0 ? "row-span-3" : "flex"}`}>
+                            <div className={`${index === 0 ? "row-span-3" : "flex"} rounded-md overflow-hidden border`}>
                                 <div className='w-full'>
                                     <img className={`${index !== 0 ? "" : ""}`} src={news.newsImg} alt="" />
                                 </div>
                                 <div className='w-full py-[10px] px-[15px]'>
-                                    <h3 className='line-clamp-2'>{news.newsTopic}</h3>
+                                    <h3 className={`${index === 0 ? "text-[28px]" : ""} line-clamp-2 text-[#333] font-semibold`}>{news.newsTopic}</h3>
+                                    <p className='text-xs text-[#555] font-light mt-[4px]'>{news.newsDate}</p>
+                                    <p className='text-sm text-[#555] font-light mt-[8px] mb-[10px]'>{news.newsDesc}</p>
                                 </div>
                             </div>
                         ))}
