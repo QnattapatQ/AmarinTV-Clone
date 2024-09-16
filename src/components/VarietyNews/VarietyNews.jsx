@@ -1,5 +1,6 @@
 import React from 'react'
 import varietyNews from './varietyNews.js'
+import { IoPlayCircleOutline } from "react-icons/io5";
 
 const VarietyNews = () => {
     return (
@@ -14,18 +15,24 @@ const VarietyNews = () => {
                     </div>
                 </div>
                 <div className='mt-6'>
-                    <div className='grid grid-cols-2 gap-x-7 gap-y-5'>
+                    <div className='grid grid-cols-2 max-992:grid-cols-1 gap-x-7 gap-y-5'>
                         {varietyNews.map((news, index) => (
-                            <div className={`${index === 0 ? "row-span-3" : "flex"} rounded-md overflow-hidden border`}>
-                                <div className='w-full'>
-                                    <img className={`${index !== 0 ? "" : ""}`} src={news.newsImg} alt="" />
+                            <a href='#' className={`${index === 0 ? "row-span-3" : "flex"} rounded-md overflow-hidden border border-[#f3f3f3]`}>
+                                <div className={`${index !== 0 ? "max-992:w-[170px]" : ""} w-full relative bg-red-500`} src={news.newsImg}>
+                                    <img className={`${index !== 0 ? "" : ""} `} src={news.newsImg} alt="" />
+                                    <div className='rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center'>
+                                        <IoPlayCircleOutline className={`${index !== 0 ? "text-4xl" : "text-[56px]"} text-white z-[1]`}/>
+                                        <div className={`${index !== 0 ? "size-[30px]" : "size-[46px]"} absolute bg-[rgba(0,0,0,0.5)] rounded-full`}>
+
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className='w-full py-[10px] px-[15px]'>
                                     <h3 className={`${index === 0 ? "text-[28px]" : ""} line-clamp-2 text-[#333] font-semibold`}>{news.newsTopic}</h3>
-                                    <p className='text-xs text-[#555] font-light mt-[4px]'>{news.newsDate}</p>
+                                    <p className={`${index !== 0 ? "mt-4" : "mt-[4px]"} text-xs text-[#555] font-light`}>{news.newsDate}</p>
                                     <p className='text-sm text-[#555] font-light mt-[8px] mb-[10px]'>{news.newsDesc}</p>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
