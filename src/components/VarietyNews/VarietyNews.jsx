@@ -17,19 +17,19 @@ const VarietyNews = () => {
                 <div className='mt-6'>
                     <div className='grid grid-cols-2 max-992:grid-cols-1 gap-x-7 gap-y-5'>
                         {varietyNews.map((news, index) => (
-                            <a href='#' className={`${index === 0 ? "row-span-3" : "flex"} rounded-md overflow-hidden border border-[#f3f3f3]`}>
+                            <a href='#' className={`${index === 0 ? "row-span-3" : "flex max-992:grid max-992:grid-cols-[170px_1fr]"} rounded-md overflow-hidden border border-[#f3f3f3]`}>
                                 <div className={`${index !== 0 ? "max-992:w-[170px]" : ""} w-full relative bg-red-500`} src={news.newsImg}>
-                                    <img className={`${index !== 0 ? "" : ""} `} src={news.newsImg} alt="" />
+                                    <img className={`${index !== 0 ? "]" : ""} object-cover h-full`} src={news.newsImg} alt="" />
                                     <div className='rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center'>
-                                        <IoPlayCircleOutline className={`${index !== 0 ? "text-4xl" : "text-[56px]"} text-white z-[1]`}/>
+                                        <IoPlayCircleOutline className={`${index !== 0 ? "text-4xl" : "text-[56px] max-992:text-[64px]"} text-white z-[1]`}/>
                                         <div className={`${index !== 0 ? "size-[30px]" : "size-[46px]"} absolute bg-[rgba(0,0,0,0.5)] rounded-full`}>
 
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-full py-[10px] px-[15px]'>
+                                <div className='w-full max-992:w-auto py-[10px] px-[15px]'>
                                     <h3 className={`${index === 0 ? "text-[28px]" : ""} line-clamp-2 text-[#333] font-semibold`}>{news.newsTopic}</h3>
-                                    <p className={`${index !== 0 ? "mt-4" : "mt-[4px]"} text-xs text-[#555] font-light`}>{news.newsDate}</p>
+                                    <p className={`${index !== 0 ? "mt-4" : "mt-[4px]"} text-xs text-[#555] font-light line-clamp-2`}>{news.newsDate}</p>
                                     <p className='text-sm text-[#555] font-light mt-[8px] mb-[10px]'>{news.newsDesc}</p>
                                 </div>
                             </a>
@@ -37,7 +37,7 @@ const VarietyNews = () => {
                     </div>
                 </div>
             </div>
-            <div  className='hidden max-992:block w-full mt-6 mb-3'>
+            <div  className='hidden max-768:block w-full mt-6 mb-3'>
                 <div className='flex justify-center items-center'>
                     <button className='w-[190px] bg-gradient-to-r from-[#00aef6] to-[#00d7fb] text-white py-2 px-[30px] text-lg rounded font-semibol'>ดูทั้งหมด</button>
                 </div>

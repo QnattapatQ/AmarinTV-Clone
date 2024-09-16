@@ -13,7 +13,7 @@ const AutomotiveNews = () => {
                     </div>
                 </div>
             </div>
-            <div  className='hidden max-992:block w-full mt-6 mb-3'>
+            <div  className='hidden max-768:block w-full mt-6 mb-3'>
                 <div className='flex justify-center items-center'>
                     <button className='w-[190px] bg-gradient-to-r from-[#565656] to-[#b2b2b2] text-white py-2 px-[30px] text-lg rounded font-semibol'>ดูทั้งหมด</button>
                 </div>
