@@ -26,33 +26,41 @@ const PopularNews = () => {
                             clickable: true,
                         }}
                         modules={[Navigation, Autoplay]}
-                        slidesPerView={3}
+                        slidesPerView={1.1}
                         spaceBetween={30}
                         loop={true}
                         autoplay={{
                             delay: 10000,
                         }}
+                        breakpoints={{
+                            768: {
+                              slidesPerView: 3,
+                              spaceBetween: 30,
+                            },
+                          }}
                     >   
                         {popularNews.map((news, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className='border h-full rounded-md overflow-hidden pb-4'>
-                                        <img src={news.newsImage} alt="" />
-                                        <div className='mt-5'>
-                                            <div className='w-[20%] text-[55px] font-semibold border-r border-black p-[10px] float-left text-center'>
-                                                {index + 1}
-                                            </div>
-                                            <div className='w-[80&] flex flex-col justify-between px-[10px]'>
-                                                <h3 className='line-clamp-2 text-base font-semibold'>{news.newsTopic}</h3>
-                                                <p className='text-xs font-light'>{news.date}</p>
+                                    <a href="#" >
+                                        <div className='border h-full rounded-md overflow-hidden pb-4'>
+                                            <img src={news.newsImage} alt="" />
+                                            <div className='mt-5 flex'>
+                                                <div className='text-[55px] w-[20%] font-semibold border-r px-4 border-black float-left text-center'>
+                                                    {index + 1}
+                                                </div>
+                                                <div className='w-[80%] flex flex-col justify-between px-[10px]'>
+                                                    <h3 className='line-clamp-2 text-base font-semibold'>{news.newsTopic}</h3>
+                                                    <p className='text-xs font-light'>{news.date}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </SwiperSlide>
                             ))
                         }
                     </Swiper>
-                    <div className='swiper-prev-btn absolute left-[-2%] size-[38px] top-1/2 bg-white z-[10] rounded-full text-black text-center cursor-pointer flex items-center justify-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] -translate-y-1/2'><FiChevronLeft className='text-xl mr-[2px]'/></div>
-                    <div className='swiper-next-btn absolute right-[-2%] size-[38px] top-1/2 bg-white z-[10] rounded-full text-black text-center cursor-pointer flex items-center justify-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] -translate-y-1/2'><FiChevronRight className='text-xl'/></div>
+                    <div className='max-768:hidden swiper-prev-btn absolute left-[-2%] size-[38px] top-1/2 bg-white z-[10] rounded-full text-black text-center cursor-pointer flex items-center justify-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] -translate-y-1/2'><FiChevronLeft className='text-xl mr-[2px]'/></div>
+                    <div className='max-768:hidden swiper-next-btn absolute right-[-2%] size-[38px] top-1/2 bg-white z-[10] rounded-full text-black text-center cursor-pointer flex items-center justify-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] -translate-y-1/2'><FiChevronRight className='text-xl'/></div>
                 </div>
             </div>
         </div>
