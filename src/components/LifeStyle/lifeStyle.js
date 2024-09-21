@@ -26,3 +26,5 @@ const lifeStyleData = [
         date: "21 ก.ย 67"
     },
 ];
+
+export default lifeStyleData;

@@ -1,5 +1,15 @@
 import React from 'react'
+
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 import latest_1 from '../../assets/LifeStyle/Latest/latest_1.png';
+import lifeStyleData from './lifeStyle';
 
 const LifeStyle = () => {
     return (
@@ -13,7 +23,7 @@ const LifeStyle = () => {
                         <button className='bg-gradient-to-r from-[#ff7b00] to-[#ffb200] text-white py-2 px-[30px] rounded'>ดูทั้งหมด</button>
                     </div>
                 </div>
-                <div  className='relative'>
+                <div  className='relative overflow-hidden'>
                     <div className='grid grid-cols-2 mt-6 gap-6'>
                         <div className='bg-white overflow-hidden rounded-md'>
                             <a href="#">
@@ -21,7 +31,7 @@ const LifeStyle = () => {
                                     <div>
                                         <img src={latest_1} alt="" />
                                     </div>
-                                    <div className='relative px-4 pt-4 pb-10'>
+                                    <div className='relative px-4 pt-4 pb-8'>
                                         <div className='absolute top-[-8%] text-[11px] font-light py-[6px] px-[13px] left-[20px] bg-[rgb(96_18_186)] text-white'>
                                             ดูดวง
                                         </div>
@@ -31,9 +41,69 @@ const LifeStyle = () => {
                                 </div>
                             </a>
                         </div>
-                        <div className='bg-green-500'>
+                        <div className='flex flex-col justify-between'>
                             <div>
-
+                                <div className='flex gap-4'>
+                                    <button>ล่าสุด</button>
+                                    <button>ดูดวง</button>
+                                    <button>บ้านและสวน</button>
+                                    <button>สุขภาพและความงาม</button>
+                                    <button>เทรนดี้</button>
+                                </div>
+                                <div className='mt-5'>
+                                    <p>บทความไลฟ์สไตล์น่าอ่าน ที่มีทั้งสาระตามเทรน ทั้งแฟชั่น ท่องเที่ยว เทคโนโลยี รถยนต์ สุขภาพ อาหาร ไอเดียแต่งบ้าน และอื่นๆอีกมากมาย อ่านไลฟ์สไตล์ อมรินทร์ออนไลน์ อมรินทร์ทีวี ช่อง 34</p>
+                                </div>
+                            </div>
+                            <div className=''>
+                                <div className='flex justify-end'>
+                                    <div className='max-768:hidden swiper-prev-btn size-[38px] z-[10] text-black text-center cursor-pointer flex items-center justify-center -translate-y-1/2'><FiChevronLeft size={30} /></div>
+                                    <div className='max-768:hidden swiper-next-btn size-[38px] z-[10] text-black text-center cursor-pointer flex items-center justify-center -translate-y-1/2'><FiChevronRight size={30}/></div>
+                                </div>
+                                <div className=''>
+                                    <Swiper
+                                        navigation={{
+                                            nextEl: '.swiper-next-btn',
+                                            prevEl: '.swiper-prev-btn',
+                                            clickable: true,
+                                        }}
+                                        modules={[Navigation, Autoplay]}
+                                        slidesPerView={2.3}
+                                        spaceBetween={20}
+                                        loop={true}
+                                        autoplay={{
+                                            delay: 10000,
+                                        }}
+                                        // breakpoints={{
+                                        //     768: {
+                                        //     slidesPerView: 3,
+                                        //     spaceBetween: 30,
+                                        //     },
+                                        // }}
+                                        className=''
+                                    >   
+                                        {lifeStyleData.map((news, index) => (
+                                                <SwiperSlide key={index} className=''>
+                                                    <div className='bg-white overflow-hidden rounded-md h-full'>
+                                                        <a href="#">
+                                                            <div>
+                                                                <div>
+                                                                    <img src={news.newsImage} alt="" />
+                                                                </div>
+                                                                <div className='relative p-4'>
+                                                                    <div className='absolute top-[-8%] text-[11px] font-light py-[6px] px-[13px] left-[20px] bg-[rgb(96_18_186)] text-white'>
+                                                                        {news.newsTag}
+                                                                    </div>
+                                                                    <h3 className='line-clamp-2 font-semibold text-[#444] text-[16px]'>{news.newsTopic}</h3>
+                                                                    <p className='text-xs font-light mt-4 text-[#444]'>{news.date}</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </SwiperSlide>
+                                            ))
+                                        }
+                                    </Swiper>
+                                </div>                            
                             </div>
                         </div>
                     </div>
