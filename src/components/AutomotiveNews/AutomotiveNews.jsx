@@ -1,4 +1,5 @@
 import React from 'react'
+import { automotiveNews } from './automotiveData.js'
 
 const AutomotiveNews = () => {
     return (
@@ -14,11 +15,21 @@ const AutomotiveNews = () => {
                 </div>
                 <div>
                     <div className='grid grid-cols-[8fr_4fr] gap-[30px] mt-6'>
-                        <div className='bg-red-500'>
-                            1
+                        <div className='grid grid-cols-3 gap-4'>
+                            {automotiveNews.map((news, index) => (
+                                <div className={`${index === 0 ? "col-span-3 flex gap-4" : ""}`}>
+                                    <div className='rounded-md overflow-hidden'>
+                                        <img src={news.newsImage} alt="" />
+                                    </div>
+                                    <div className={`${index !== 0 ? "mt-[15px]" : ""}`}>
+                                        <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold`}>{news.newsTopic}</h3>
+                                        <p>{news.newsDesc}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <div className='bg-blue-500'>
-                            1
+                            
                         </div>
                     </div>
                 </div>
