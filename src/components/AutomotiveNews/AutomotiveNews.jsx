@@ -15,15 +15,16 @@ const AutomotiveNews = () => {
                 </div>
                 <div>
                     <div className='grid grid-cols-[8fr_4fr] gap-[30px] mt-6'>
-                        <div className='grid grid-cols-3 gap-4'>
+                        <div className='grid grid-cols-3 gap-[30px]'>
                             {automotiveNews.map((news, index) => (
-                                <div className={`${index === 0 ? "col-span-3 flex gap-4" : ""}`}>
+                                <div className={`${index === 0 ? "col-span-3 flex gap-[30px]" : ""}`}>
                                     <div className='rounded-md overflow-hidden'>
                                         <img src={news.newsImage} alt="" />
                                     </div>
                                     <div className={`${index !== 0 ? "mt-[15px]" : ""}`}>
-                                        <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold`}>{news.newsTopic}</h3>
-                                        <p>{news.newsDesc}</p>
+                                        <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold line-clamp-3`}>{news.newsTopic}</h3>
+                                        <p className= 'text-[#a2a2a2] font-light line-clamp-3 mt-2 mb-[10px]'>{news.newsDesc}</p>
+                                        <p className='text-xs text-[#838383] mt-[10px]'>{news.date}</p>
                                     </div>
                                 </div>
                             ))}
