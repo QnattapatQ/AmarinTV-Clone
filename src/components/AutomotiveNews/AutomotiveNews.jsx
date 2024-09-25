@@ -1,5 +1,15 @@
 import React from 'react'
-import { automotiveNews } from './automotiveData.js'
+import carNews, { automotiveNews } from './automotiveData.js'
+import automotive_8 from '../../assets/AutomotiveNews/automotive_8.png';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Pagination, Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './style.css';
+
 
 const AutomotiveNews = () => {
     return (
@@ -14,23 +24,59 @@ const AutomotiveNews = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-[8fr_4fr] gap-[30px] mt-6'>
-                        <div className='grid grid-cols-3 gap-[30px]'>
-                            {automotiveNews.map((news, index) => (
-                                <div className={`${index === 0 ? "col-span-3 flex gap-[30px]" : ""}`}>
-                                    <div className='rounded-md overflow-hidden'>
-                                        <img src={news.newsImage} alt="" />
-                                    </div>
-                                    <div className={`${index !== 0 ? "mt-[15px]" : ""}`}>
-                                        <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold line-clamp-3`}>{news.newsTopic}</h3>
-                                        <p className= 'text-[#a2a2a2] font-light line-clamp-3 mt-2 mb-[10px]'>{news.newsDesc}</p>
-                                        <p className='text-xs text-[#838383] mt-[10px]'>{news.date}</p>
-                                    </div>
-                                </div>
-                            ))}
+                    <div className='grid grid-cols-[8fr_4fr] gap-[30px] mt-6 max-992:grid-cols-1'>
+                        <div>
+                            <div className='grid grid-cols-3 gap-[30px]'>
+                                {automotiveNews.map((news, index) => (
+                                    <a href='#' className={`${index === 0 ? "col-span-3 flex gap-[30px]" : ""}`}>
+                                        <div className='rounded-md overflow-hidden'>
+                                            <img src={news.newsImage} alt="" />
+                                        </div>
+                                        <div className={`${index !== 0 ? "mt-[15px]" : ""}`}>
+                                            <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold line-clamp-3`}>{news.newsTopic}</h3>
+                                            <p className= 'text-[#a2a2a2] font-light line-clamp-3 mt-2 mb-[10px]'>{news.newsDesc}</p>
+                                            <p className='text-xs text-[#838383] mt-[10px]'>{news.date}</p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
-                        <div className='bg-blue-500'>
-                            
+                        <div className='overflow-hidden'>
+                            <div>
+                                <div className='bg-[#1e1e1e] p-4 border border-[#505050] rounded-lg'>
+                                    <Swiper
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        clic
+                                        autoplay={{
+                                            delay: 10000,
+                                        }} 
+                                        modules={[Pagination, Autoplay]}
+                                        className=''
+                                    >
+                                        {carNews.map((news, index) => (
+                                            <SwiperSlide key={index}>
+                                                <a href="#">
+                                                    <div>
+                                                        <div className='rounded-md overflow-hidden'>
+                                                            <img className='' src={news.carImage} alt="" />
+                                                        </div>
+                                                        <div className='py-[5px] px-2'>
+                                                            <h3 className='text-white text-center font-semibold'>{news.carNewsTopic}</h3>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src={automotive_8} alt="" />
+                                    </a>
+                                </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
