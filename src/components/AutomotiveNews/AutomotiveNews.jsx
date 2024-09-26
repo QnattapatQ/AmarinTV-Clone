@@ -26,14 +26,14 @@ const AutomotiveNews = () => {
                 <div>
                     <div className='grid grid-cols-[8fr_4fr] gap-[30px] mt-6 max-992:grid-cols-1'>
                         <div>
-                            <div className='grid grid-cols-3 gap-[30px]'>
+                            <div className='grid grid-cols-3 gap-[30px] max-768:grid-cols-1'>
                                 {automotiveNews.map((news, index) => (
-                                    <a href='#' className={`${index === 0 ? "col-span-3 flex gap-[30px]" : ""}`}>
+                                    <a href='#' className={`${index === 0 ? "col-span-3 max-768:col-span-1 flex gap-[30px] max-768:gap-0 max-768:flex-col bg-[#151515] max-768:rounded-lg" : "max-768:grid max-768:grid-cols-[30%_auto] max-768:gap-4"}`}>
                                         <div className='rounded-md overflow-hidden'>
                                             <img src={news.newsImage} alt="" />
                                         </div>
-                                        <div className={`${index !== 0 ? "mt-[15px]" : ""}`}>
-                                            <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold line-clamp-3`}>{news.newsTopic}</h3>
+                                        <div className={`${index !== 0 ? "mt-[15px] max-768:mt-0" : "max-768:p-[20px]"}`}>
+                                            <h3 className={`${index === 0 ? "text-[22px]" : ""} text-white font-semibold line-clamp-2`}>{news.newsTopic}</h3>
                                             <p className= 'text-[#a2a2a2] font-light line-clamp-3 mt-2 mb-[10px]'>{news.newsDesc}</p>
                                             <p className='text-xs text-[#838383] mt-[10px]'>{news.date}</p>
                                         </div>
@@ -42,18 +42,17 @@ const AutomotiveNews = () => {
                             </div>
                         </div>
                         <div className='overflow-hidden'>
-                            <div>
-                                <div className='bg-[#1e1e1e] p-4 border border-[#505050] rounded-lg'>
+                            <div className='grid gap-4 grid-cols-1 max-992:grid-cols-2 max-768:grid-cols-1'>
+                                <div className='bg-[#1e1e1e] p-4 border border-[#505050] rounded-lg overflow-hidden'>
                                     <Swiper
                                         pagination={{
                                             clickable: true,
                                         }}
-                                        clic
                                         autoplay={{
                                             delay: 10000,
                                         }} 
                                         modules={[Pagination, Autoplay]}
-                                        className=''
+                                        className='w-full'
                                     >
                                         {carNews.map((news, index) => (
                                             <SwiperSlide key={index}>
@@ -71,9 +70,9 @@ const AutomotiveNews = () => {
                                         ))}
                                     </Swiper>
                                 </div>
-                                <div>
-                                    <a href="#">
-                                        <img src={automotive_8} alt="" />
+                                <div className='max-768:max-w-[370px] max-768:mx-auto'>
+                                    <a href="#"  className=''>
+                                        <img className='w-full' src={automotive_8} alt="" />
                                     </a>
                                 </div>  
                             </div>
