@@ -1,6 +1,7 @@
 import AutomotiveNews from "./components/AutomotiveNews/AutomotiveNews.jsx";
 import CelebrityNews from "./components/CelebrityNews/CelebrityNews.jsx";
 import DramasSection from "./components/Dramas/DramasSection.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import LatestNews from "./components/LatestNews/LatestNews.jsx";
 import LifeStyle from "./components/LifeStyle/LifeStyle.jsx";
 import LiveSteamSection from "./components/LiveSteamSection/LiveSteamSection"
@@ -31,6 +32,7 @@ function App() {
                 <VarietyNews/>
                 <LongpungSection/>
                 <PopularNews/>
+                <Footer/>
             </div>
         </ScreenWidthProvider>
     )

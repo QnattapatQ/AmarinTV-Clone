@@ -1,0 +1,10 @@
+.line-top::before {
+    content: "";
+    position: absolute;
+    background: url("../../assets/Dramas/line.png") repeat top left;
+    width: 100%;
+    height: 4px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
