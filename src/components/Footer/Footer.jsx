@@ -82,7 +82,9 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='bg-green-500'>
-
+                            <h4>
+                                <a href="#">ร่วมงานกับเรา</a>
+                            </h4>
                         </div>
                         <div className='bg-orange-500'>
 
