@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsShieldFillCheck } from "react-icons/bs";
 import './footer.css';
 
 const Footer = () => {
@@ -34,8 +35,8 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='grid grid-cols-3 mt-[50px]'>
-                        <div className='flex justify-between bg-red-500'>
+                    <div className='grid grid-cols-3 mt-[50px] max-992:grid-cols-1'>
+                        <div className='flex justify-between'>
                             <div className='flex flex-col w-full gap-2 relative'>
                                 <h4>
                                     <a href="#">ข่าว</a>
@@ -81,13 +82,47 @@ const Footer = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className='bg-green-500'>
-                            <h4>
+                        <div className=''>
+                            <h4 className='text-lg font-semibold'>
                                 <a href="#">ร่วมงานกับเรา</a>
                             </h4>
+                            <div className='flex items-center gap-2 mt-[20px] cursor-pointer'>
+                                <span className='size-[35px] bg-[#6bbae4] rounded-full flex justify-center items-center'>
+                                    <BsShieldFillCheck className='text-white' size={25}/>
+                                </span>
+                                <span className='text-xs'>ตั้งค่าคุกกี้</span>
+                            </div>
                         </div>
-                        <div className='bg-orange-500'>
-
+                        <div className=''>
+                            <h4 className='mb-[10px] text-lg font-semibold'>
+                                ติดต่อเรา
+                            </h4>
+                            <div className='pb-[20px]'>
+                                <p className='text-sm mb-[10px] font-light'>
+                                    <strong className='font-medium'>อมรินทร์ เทเลวิชั่น</strong> 7/9 ถนนอรุณอมรินทร์ บางกอกน้อย กรุงเทพฯ 10700
+                                </p>
+                                <p className='text-sm mb-[10px] font-light'>
+                                    <strong className='font-medium'>ติดต่อโฆษณา Website & Social media</strong> sale@amarintv.com
+                                </p>
+                                <p className='text-sm mb-[10px] font-light'>
+                                    <strong className='font-medium'>ติดต่อโฆษณา อมรินทร์ ทีวี</strong> 092-246-5615
+                                </p>
+                                <p className='text-sm mb-[10px] font-light'>
+                                    <strong className='font-medium'>ติดต่อกองบรรณาธิการข่าว</strong> 02-422-9191
+                                </p>
+                            </div>
+                            <div>
+                                <p className='text-sm mb-[10px] font-light'>
+                                    <div>
+                                        <strong className='pr-1 font-medium'>ติดต่อแจ้งปัญหาด้านการรับชมหรือร้องเรียน</strong>
+                                        <a href="#">02-422-9191</a>
+                                    </div>
+                                    <div>
+                                        &#40; จันทร์ – ศุกร์ เวลา 09.00 – 18.00 น &#41;
+                                        <a href="#"> cr@amarintv.com</a>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
