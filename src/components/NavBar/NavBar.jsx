@@ -4,6 +4,7 @@ import spotlight from '../../assets/spotlight.svg';
 import { IoSearchSharp } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import MenuSidebar from '../MenuSidebar/MenuSidebar';
 
 const NavBar = () => {
     return (
@@ -74,16 +75,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className='z-[100] fixed flex w-full inset-0'>
-                <div className='bg-[rgba(0,0,0,0.4)] w-full'>
-
-                </div>
-                <div className='absolute w-[300px] bg-white right-0 bottom-0 top-0'>
-                    <a href="#" className='w-full text-center'>
-                        <img className='h-[50px] mx-auto my-4' src="https://static.amarintv.com/assets/images/logo.svg" alt="" />
-                    </a>
-                </div>
-            </div>
+            <MenuSidebar/>
         </div>
     )
 }
