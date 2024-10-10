@@ -9,3 +9,20 @@
         font-family: "Kanit", "sans-serif";
     }
 }
+
+.collapse {
+    border-radius: 0;
+}
+
+.collapse-content {
+    padding: 0px;
+}
+
+.collapse-content {
+    padding-bottom: 0px;
+}
+
+.collapse-title {
+    padding-right: 0;
+    padding-left: 0;
+}
