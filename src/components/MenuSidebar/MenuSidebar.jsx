@@ -63,8 +63,15 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
+                        <li className='px-[6px] border-t'>
+                            <a href='#'>
+                                <div className="collapse-title w-full">
+                                    ละคร
+                                </div>
+                            </a>
+                        </li>
                         <li className='px-[6px]'>
-                            <div className="collapse collapse-arrow border-y">
+                            <div className="collapse collapse-arrow border-t">
                                 <input type="checkbox" name="my-accordion-2" />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
@@ -83,7 +90,83 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
+                        <li className='px-[6px]'>
+                            <div className="collapse collapse-arrow border-t">
+                                <input type="checkbox" name="my-accordion-2" />
+                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-content relative flex flex-col">
+                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li className='px-[6px] border-t'>
+                            <a href='#'>
+                                <div className="collapse-title w-full">
+                                    ละคร
+                                </div>
+                            </a>
+                        </li>
+                        <li className='px-[6px]'>
+                            <div className="collapse collapse-arrow border-t">
+                                <input type="checkbox" name="my-accordion-2" />
+                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-content relative flex flex-col">
+                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li className='px-[6px]'>
+                            <div className="collapse collapse-arrow border-t">
+                                <input type="checkbox" name="my-accordion-2" />
+                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-content relative flex flex-col">
+                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li className='px-[6px] border-y'>
+                            <a href='#'>
+                                <div className="collapse-title w-full">
+                                    ละคร
+                                </div>
+                            </a>
+                        </li>
                     </ul>
+                    <div className='flex gap-[10px] w-full justify-center pb-4'>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
