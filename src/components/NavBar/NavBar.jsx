@@ -34,7 +34,7 @@ const NavBar = () => {
                             <li className='px-2 text-[15px] font-semibold'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ละคร</a>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold'>
+                            <li className='px-2 text-[15px] font-semibold max-992:hidden'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ชีพจรลงพุงไกด์</a>
                             </li>
                             <li className='px-2 text-[15px] font-semibold'>

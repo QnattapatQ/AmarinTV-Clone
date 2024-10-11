@@ -98,16 +98,16 @@ const Footer = () => {
                                 ติดต่อเรา
                             </h4>
                             <div className='pb-[20px]'>
-                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col py-2'>
+                                <p className='text-sm font-light mb-[10px] max-768:flex max-768:flex-col max-768:py-2 text-nowrap'>
                                     <strong className='font-medium'>อมรินทร์ เทเลวิชั่น</strong> 7/9 ถนนอรุณอมรินทร์ บางกอกน้อย กรุงเทพฯ 10700
                                 </p>
-                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col py-2'>
+                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col max-768:py-2'>
                                     <strong className='font-medium'>ติดต่อโฆษณา Website & Social media</strong> sale@amarintv.com
                                 </p>
-                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col py-2'>
+                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col max-768:py-2'>
                                     <strong className='font-medium'>ติดต่อโฆษณา อมรินทร์ ทีวี</strong> 092-246-5615
                                 </p>
-                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col py-2'>
+                                <p className='text-sm mb-[10px] font-light max-768:flex max-768:flex-col max-768:py-2'>
                                     <strong className='font-medium'>ติดต่อกองบรรณาธิการข่าว</strong> 02-422-9191
                                 </p>
                             </div>

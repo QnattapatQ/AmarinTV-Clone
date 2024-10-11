@@ -39,7 +39,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option1'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title font-semibold">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ทั้งหมด</a>
@@ -66,7 +66,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option2'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">วีดีโอ</div>
+                                <div className="collapse-title font-semibold">วีดีโอ</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-t from-[#82399e] to-[#b86bcd] top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">วีดีโอทั้งหมด</a>
@@ -82,9 +82,9 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className='px-[6px] border-t'>
+                        <li className='px-[6px] border-t relative after:absolute after:opacity-0 after:h-[3px] after:bg-red-500 after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:hover:opacity-100 after:duration-300'>
                             <a href='#'>
-                                <div className="collapse-title w-full">
+                                <div className="collapse-title w-full font-semibold">
                                     ละคร
                                 </div>
                             </a>
@@ -98,7 +98,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option3'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ชีพจรลงพุงไกด์</div>
+                                <div className="collapse-title font-semibold">ชีพจรลงพุงไกด์</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-t from-[#c62a0f] to-[#ea3516] top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารไทย</a>
@@ -131,7 +131,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option4'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ไลฟ์สไตล์</div>
+                                <div className="collapse-title font-semibold">ไลฟ์สไตล์</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ล่าสุด</a>
@@ -142,9 +142,9 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className='px-[6px] border-t'>
+                        <li className='px-[6px] border-t relative after:absolute after:opacity-0 after:h-[3px] after:bg-[#00aef6] after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:hover:opacity-100 after:duration-300'>
                             <a href='#'>
-                                <div className="collapse-title w-full">
+                                <div className="collapse-title w-full font-semibold">
                                     ยานยนต์
                                 </div>
                             </a>
@@ -158,7 +158,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option5'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ผังรายการ</div>
+                                <div className="collapse-title font-semibold">ผังรายการ</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-[#ff7b00] top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white' href="#">ข่าว</a>
@@ -176,7 +176,7 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option6'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ตรวจสลากกินแบ่งรัฐบาล</div>
+                                <div className="collapse-title font-semibold">ตรวจสลากกินแบ่งรัฐบาล</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-[#00aef6] top-0 left-0 bottom-5'></div>
                                     <a className='py-2 px-4 hover:bg-gradient-to-r from-[#00aef6] to-[#00d7fb] hover:text-white' href="#">ล่าสุด</a>
@@ -184,33 +184,38 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className='px-[6px] border-y'>
+                        <li className='px-[6px] border-y relative after:absolute after:opacity-0 after:h-[3px] after:bg-[#82399e] after:left-0 after:bottom-0 after:w-0 after:hover:w-full after:hover:opacity-100 after:duration-300'>
                             <a href='#'>
-                                <div className="collapse-title w-full">
+                                <div className="collapse-title w-full font-semibold">
                                     ผู้ประกาศข่าว
                                 </div>
                             </a>
                         </li>
                     </ul>
-                    <div className='flex gap-[10px] w-full justify-center pb-4'>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
-                        </a>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
-                        </a>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
-                        </a>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
-                        </a>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
-                        </a>
-                        <a href="#">
-                            <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
-                        </a>
+                    <div className='pb-[20px] pt-[30px]'>
+                        <div className='mb-3'>
+                            <p className='font-semibold'>Follow Us</p>
+                        </div>
+                        <div className='flex'>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
+                            </a>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
+                            </a>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
+                            </a>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
+                            </a>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
+                            </a>
+                            <a className='mr-[5px]' href="#">
+                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
