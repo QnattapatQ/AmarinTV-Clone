@@ -8,6 +8,13 @@ const MenuSidebar = () => {
     const openMenuDropdown = () => {
         setOpenMenu(!openMenu)
     }
+
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleCheckboxChange = (event) => {
+        const newValue = event.target.value;
+        setSelectedOption(newValue === selectedOption ? null : newValue);
+    };
     
     return (
         <div className='z-[100] fixed flex w-full inset-0'>
@@ -23,9 +30,15 @@ const MenuSidebar = () => {
                 </div>
                 <div className='mt-[10px]'>
                     <ul>
-                        <li className='px-[6px]'>
+                        <li className='px-[6px]' data-menu="1">
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option1"
+                                    checked={selectedOption === 'option1'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
@@ -43,9 +56,15 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className='px-[6px]'>
+                        <li className='px-[6px]' data-menu="2">
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option2"
+                                    checked={selectedOption === 'option2'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
@@ -70,9 +89,15 @@ const MenuSidebar = () => {
                                 </div>
                             </a>
                         </li>
-                        <li className='px-[6px]'>
+                        <li className='px-[6px]' data-menu="3">
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option3"
+                                    checked={selectedOption === 'option3'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
@@ -90,9 +115,15 @@ const MenuSidebar = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className='px-[6px]'>
+                        <li className='px-[6px]' data-menu="4">
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option4"
+                                    checked={selectedOption === 'option4'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
@@ -113,7 +144,13 @@ const MenuSidebar = () => {
                         </li>
                         <li className='px-[6px]'>
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option5"
+                                    checked={selectedOption === 'option5'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
@@ -127,7 +164,13 @@ const MenuSidebar = () => {
                         </li>
                         <li className='px-[6px]'>
                             <div className="collapse collapse-arrow border-t">
-                                <input type="checkbox" name="my-accordion-2" />
+                                <input 
+                                    type="checkbox" 
+                                    name="my-accordion-2"
+                                    value="option6"
+                                    checked={selectedOption === 'option6'}
+                                    onChange={handleCheckboxChange} 
+                                />
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
