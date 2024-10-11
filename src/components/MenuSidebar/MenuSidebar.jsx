@@ -21,7 +21,7 @@ const MenuSidebar = () => {
             <div className='bg-[rgba(0,0,0,0.4)] w-full'>
 
             </div>
-            <div className='absolute w-[300px] px-4 bg-white right-0 bottom-0 top-0'>
+            <div className='absolute w-[300px] px-4 bg-white right-0 bottom-0 top-0 overflow-scroll menu-scroll'>
                 <a href="#" className='w-full text-center'>
                     <img className='h-[50px] mx-auto my-4' src="https://static.amarintv.com/assets/images/logo.svg" alt="" />
                 </a>
@@ -42,17 +42,18 @@ const MenuSidebar = () => {
                                 <div className="collapse-title">ข่าว</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ทั้งหมด</a>
                                     <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ทุบโต๊ะข่าว</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวบันเทิง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวเศรษฐกิจ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวการเมือง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวกีฬา</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวต่างประเทศ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวไอที</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวเกษตรกรรม</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">สกู๊ปพิเศษ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวประชาสัมพันธ์</a>
                                 </div>
                             </div>
                         </li>
@@ -65,20 +66,19 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option2'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title">วีดีโอ</div>
                                 <div className="collapse-content relative flex flex-col">
-                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <div className='absolute w-[4px] bg-gradient-to-t from-[#82399e] to-[#b86bcd] top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">วีดีโอทั้งหมด</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">คลิปทุบโต๊ะข่าว</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">ข่าวอรุณอัมรินทร์</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">ข่าวเที่ยงอมรินทร์</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">ข่าวเย็นอมรินทร์</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">APOP TODAY</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">Spotlight</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">วาไรตี้</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">ละครย้อนหลัง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white' href="#">Original Online</a>
                                 </div>
                             </div>
                         </li>
@@ -98,20 +98,27 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option3'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title">ชีพจรลงพุงไกด์</div>
                                 <div className="collapse-content relative flex flex-col">
-                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <div className='absolute w-[4px] bg-gradient-to-t from-[#c62a0f] to-[#ea3516] top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารไทย</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารเมนูเส้น</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารจานเดียว</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">คาเฟ่ / ร้านกาแฟ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารนานาชาติ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารอีสาน</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านบุฟเฟ่ต์</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารฟิวชั่น</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านขนมไทย</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารเจและมังสวิรัติ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารทะเล</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารว่าง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านเบอร์เกอร์-สเต๊ก</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารข้างทาง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารใต้</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">ร้านอาหารเหนือ</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">บทความชีพจรลงพุงไกด์</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white' href="#">จานอร่อย By เชฟปอ</a>
                                 </div>
                             </div>
                         </li>
@@ -124,21 +131,21 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option4'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title">ไลฟ์สไตล์</div>
                                 <div className="collapse-content relative flex flex-col">
                                     <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ล่าสุด</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ดูดวง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">บ้านและสวน</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">สุขภาพและความงาม</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">เทรนดี้</a>
                                 </div>
                             </div>
                         </li>
                         <li className='px-[6px] border-t'>
                             <a href='#'>
                                 <div className="collapse-title w-full">
-                                    ละคร
+                                    ยานยนต์
                                 </div>
                             </a>
                         </li>
@@ -151,14 +158,12 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option5'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title">ผังรายการ</div>
                                 <div className="collapse-content relative flex flex-col">
-                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <div className='absolute w-[4px] bg-gradient-to-r from-[#ff7b00] top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white' href="#">ข่าว</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white' href="#">บันเทิง</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white' href="#">ละคร</a>
                                 </div>
                             </div>
                         </li>
@@ -171,21 +176,18 @@ const MenuSidebar = () => {
                                     checked={selectedOption === 'option6'}
                                     onChange={handleCheckboxChange} 
                                 />
-                                <div className="collapse-title">ข่าว</div>
+                                <div className="collapse-title">ตรวจสลากกินแบ่งรัฐบาล</div>
                                 <div className="collapse-content relative flex flex-col">
-                                    <div className='absolute w-[4px] bg-gradient-to-r from-amber-500 top-0 left-0 bottom-5'></div>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
-                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white' href="#">ข่าวทั่วไป</a>
+                                    <div className='absolute w-[4px] bg-gradient-to-r from-[#00aef6] top-0 left-0 bottom-5'></div>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-[#00aef6] to-[#00d7fb] hover:text-white' href="#">ล่าสุด</a>
+                                    <a className='py-2 px-4 hover:bg-gradient-to-r from-[#00aef6] to-[#00d7fb] hover:text-white' href="#">ย้อนหลัง</a>
                                 </div>
                             </div>
                         </li>
                         <li className='px-[6px] border-y'>
                             <a href='#'>
                                 <div className="collapse-title w-full">
-                                    ละคร
+                                    ผู้ประกาศข่าว
                                 </div>
                             </a>
                         </li>
