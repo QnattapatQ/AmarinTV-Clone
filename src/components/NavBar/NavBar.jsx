@@ -41,31 +41,93 @@ const NavBar = () => {
                 <div className='flex justify-between items-center w-full'>
                     <div className=''>
                         <ul className='flex items-center justify-center h-full max-768:hidden'>
-                            <li className='px-2 text-[15px] font-semibold'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ข่าว</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-r from-amber-500 to-yellow-400 z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ทั้งหมด</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวทั่วไป</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ทุบโต๊ะข่าว</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวบันเทิง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวเศรษฐกิจ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวการเมือง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวกีฬา</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวต่างประเทศ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวไอที</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวเกษตรกรรม</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">สกู๊ปพิเศษ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ข่าวประชาสัมพันธ์</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">วีดีโอ</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-t from-[#82399e] to-[#b86bcd] z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">วีดีโอทั้งหมด</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">คลิปทุบโต๊ะข่าว</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">ข่าวอรุณอัมรินทร์</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">ข่าวเที่ยงอมรินทร์</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">ข่าวเย็นอมรินทร์</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">APOP TODAY</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">Spotlight</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">วาไรตี้</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">ละครย้อนหลัง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#82399e] to-[#b86bcd] hover:text-white text-nowrap bg-white font-light' href="#">Original Online</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold'>
-                                <a className='px-[5px] py-[15px] text-nowrap' href="#">ละคร</a>
+                            <li className='px-2 text-[15px] font-semibold relative after:absolute after:h-[3px] after:opacity-0 after:w-0 after:left-0 after:bottom-[-70%] after:bg-red-500 after:hover:w-full after:duration-200 after:hover:opacity-100'>
+                                <a className='px-[5px] py-[15px] text-nowrap w-full' href="#">ละคร</a>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold max-992:hidden'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative max-992:hidden'> 
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ชีพจรลงพุงไกด์</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-t from-[#c62a0f] to-[#ea3516] z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารไทย</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารเมนูเส้น</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารจานเดียว</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">คาเฟ่ / ร้านกาแฟ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารนานาชาติ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารอีสาน</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านบุฟเฟ่ต์</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารฟิวชั่น</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านขนมไทย</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารเจและมังสวิรัติ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารทะเล</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารว่าง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านเบอร์เกอร์-สเต๊ก</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารข้างทาง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารใต้</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">ร้านอาหารเหนือ</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">บทความชีพจรลงพุงไกด์</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-t from-[#c62a0f] to-[#ea3516] hover:text-white bg-white text-nowrap font-light' href="#">จานอร่อย By เชฟปอ</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ไลฟ์สไตล์</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-r from-amber-500 to-yellow-400 z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ล่าสุด</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">ดูดวง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">บ้านและสวน</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">สุขภาพและความงาม</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-amber-500 to-yellow-400 hover:text-white text-nowrap bg-white font-light' href="#">เทรนดี้</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold max-1440:hidden'>
+                            <li className='px-2 text-[15px] font-semibold relative max-1440:hidden after:absolute after:h-[3px] after:opacity-0 after:w-0 after:left-0 after:bottom-[-70%] after:bg-[#00aef6] after:hover:w-full after:duration-200 after:hover:opacity-100'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ยานยนต์</a>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold max-1440:hidden'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative max-1440:hidden'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ผังรายการ</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-r from-[#ff7b00] to-[#ffb200] z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white text-nowrap bg-white font-light' href="#">ข่าว</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white text-nowrap bg-white font-light' href="#">บันเทิง</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-[#ff7b00] to-[#ffb200] hover:text-white text-nowrap bg-white font-light' href="#">ละคร</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold max-1440:hidden'>
+                            <li className='group/submenu px-2 text-[15px] font-semibold relative max-1440:hidden'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ตรวจสลากกินแบ่งรัฐบาล</a>
+                                <div className='absolute shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] min-w-[230px] w-full top-[38px] pt-[3px] duration-100 left-[0px] flex flex-col bg-gradient-to-r from-[#00aef6] to-[#00d7fb] z-[300] opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible hover:opacity-100 hover:invisible'>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-[#00aef6] to-[#00d7fb] hover:text-white text-nowrap bg-white font-light' href="#">ล่าสุด</a>
+                                    <a className='py-[10px] px-[25px] hover:bg-gradient-to-r from-[#00aef6] to-[#00d7fb] hover:text-white text-nowrap bg-white font-light' href="#">ย้อนหลัง</a>
+                                </div>
                             </li>
-                            <li className='px-2 text-[15px] font-semibold max-1440:hidden'>
+                            <li className='px-2 text-[15px] font-semibold relative max-1440:hidden after:absolute after:h-[3px] after:opacity-0 after:w-0 after:left-0 after:bottom-[-70%] after:bg-[#82399e] after:hover:w-full after:duration-200 after:hover:opacity-100'>
                                 <a className='px-[5px] py-[15px] text-nowrap' href="#">ผู้ประกาศข่าว</a>
                             </li>
                         </ul>

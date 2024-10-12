@@ -13,6 +13,7 @@ import PopularNews from "./components/PopularNews/PopularNews.jsx";
 import SpotlightNews from "./components/SpotlightNews/SpotlightNews.jsx";
 import VarietyNews from "./components/VarietyNews/VarietyNews.jsx";
 import ScreenWidthProvider from "./context/ScreenWidth.jsx";
+import ads_banner from '../src/assets/ads_banner.png';
 
 function App() {
   
@@ -20,6 +21,11 @@ function App() {
         <ScreenWidthProvider>
             <div className="">
                 <NavBar/>
+                <div className="flex items-center justify-center p-4">
+                    <a href="#">
+                        <img src={ads_banner} alt="" />
+                    </a>
+                </div>
                 <LiveSteamSection/>
                 <LatestNews/>
                 <SpotlightNews/>
