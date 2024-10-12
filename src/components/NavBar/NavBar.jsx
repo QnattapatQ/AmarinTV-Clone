@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import amarin10years from '../../assets/logo_10year.png';
 import spotlight from '../../assets/spotlight.svg';
 import { IoSearchSharp } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import MenuSidebar from '../MenuSidebar/MenuSidebar';
+import { ScreenWidthContext } from '../../context/ScreenWidth';
 
 const NavBar = () => {
+
+    const width = useContext(ScreenWidthContext);
+
+    const [toggleOpen, setToggleOpen] = useState(false);
+
+    const toggleSideBar = () => {
+        setToggleOpen(!toggleOpen)
+    }
+
+    useEffect(() => {
+        if(width.winWidth >= 1440) {
+            setToggleOpen(false)
+        }
+    },[width.winWidth]);
+
     return (
         <div className='border-b pb-0'>
             <div className='px-4 grid grid-cols-[auto_1fr] relative'>
@@ -69,13 +85,17 @@ const NavBar = () => {
                             </div>
                         <div>
                         <div className='hidden max-1440:flex items-center'>
-                            <IoMdMenu className='text-3xl cursor-pointer'/>
+                            {toggleOpen ? 
+                                <IoClose className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>
+                                    :
+                                <IoMdMenu className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>    
+                            }
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
-            <MenuSidebar/>
+            <MenuSidebar toggleOpen={toggleOpen} setToggleOpen={setToggleOpen}/>
         </div>
     )
 }

@@ -1,13 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { IoChevronForward } from "react-icons/io5";
+import React, { useState } from 'react'
+import { IoSearch } from "react-icons/io5";
 
-const MenuSidebar = () => {
-
-    const [openMenu, setOpenMenu] = useState(false);
-
-    const openMenuDropdown = () => {
-        setOpenMenu(!openMenu)
-    }
+const MenuSidebar = ({ toggleOpen, setToggleOpen }) => {
 
     const [selectedOption, setSelectedOption] = useState(null);
 
@@ -17,16 +11,19 @@ const MenuSidebar = () => {
     };
     
     return (
-        <div className='z-[100] fixed flex w-full inset-0'>
-            <div className='bg-[rgba(0,0,0,0.4)] w-full'>
+        <div className={`${toggleOpen ? 'flex visible' : 'opacity-0 invisible'} z-[100] fixed w-full inset-0 duration-300`}>
+            <div className='bg-[rgba(0,0,0,0.4)] w-full' onClick={() => setToggleOpen(!toggleOpen)}>
 
             </div>
-            <div className='absolute w-[300px] px-4 bg-white right-0 bottom-0 top-0 overflow-scroll menu-scroll'>
+            <div className={`${toggleOpen ? 'translate-x-[0]' : 'translate-x-[300px]'} menu-scroll absolute w-[300px] px-4 bg-white right-0 bottom-0 top-0 overflow-scroll duration-300`}>
                 <a href="#" className='w-full text-center'>
                     <img className='h-[50px] mx-auto my-4' src="https://static.amarintv.com/assets/images/logo.svg" alt="" />
                 </a>
-                <div>
-                    <input className='border outline-none w-full p-2 rounded-sm' type="text" name="" id="" />
+                <div className='w-full bg-gray-100 overflow-hidden rounded-sm'>
+                    <div className='flex items-center justify-center'>
+                        <IoSearch size={20}/>
+                        <input className='outline-none p-2 w-[80px] bg-gray-100 rounded-sm focus:w-full duration-200' type="text" placeholder='ค้นหา' />
+                    </div>
                 </div>
                 <div className='mt-[10px]'>
                     <ul>
