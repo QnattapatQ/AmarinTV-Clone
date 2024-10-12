@@ -26,9 +26,9 @@ const LotterySection = () => {
                                     <strong className='font-semibold text-[40px] text-[#80389f]'>199606</strong>
                                     <p className='text-[#5f5f5f] text-sm'>รางวัลที่ 1</p>
                                 </div>
-                                <div className='flex gap-[10px] mt-[10px]'>
-                                    <div className='w-full'>
-                                        <div className='border-2 rounded-md text-center py-[7px]'>
+                                <div className='flex max-768:flex-col gap-[10px] mt-[10px]'>
+                                    <div className='w-full max-768:flex max-768:gap-[10px]'>
+                                        <div className='border-2 rounded-md text-center py-[7px] w-full'>
                                             <p className='flex items-center justify-center px-[10px]'>
                                                 <span className='px-[10px] text-[#80389f] text-2xl font-semibold'>173</span>
                                                 <span className='w-[1px] h-[20px] bg-[#888]'></span>
@@ -36,7 +36,7 @@ const LotterySection = () => {
                                             </p>
                                             <p className='mt-[5px] text-[#5f5f5f] text-sm'>เลขหน้า 3 ตัว</p>
                                         </div>
-                                        <div className='border-2 rounded-md text-center py-[7px] mt-[10px]'>
+                                        <div className='border-2 rounded-md text-center py-[7px] mt-[10px] max-768:mt-0 w-full'>
                                             <p className='flex items-center justify-center px-[10px]'>
                                                 <span className='px-[10px] text-[#80389f] text-2xl font-semibold'>173</span>
                                                 <span className='w-[1px] h-[20px] bg-[#888]'></span>
@@ -62,7 +62,7 @@ const LotterySection = () => {
                                         <FaCaretDown/>
                                     </div>
                                     <div>
-                                        <div className='flex gap-4 mt-4'>
+                                        <div className='flex gap-4 mt-4 max-768:flex-col'>
                                             <input className='h-[50px] py-[6px] px-[12px] border border-[#d3d3d3] rounded-sm text-ทก outline-none w-full' placeholder='กรอกเลขสลากที่นี่' type="text" />
                                             <button className='bg-[#656c6f] rounded-sm h-[50px] px-[25px] text-white text-nowrap text-sm font-semibold'>ตรวจสลากของคุณ</button>
                                         </div>
@@ -72,7 +72,7 @@ const LotterySection = () => {
                                     <div className='mb-[5px] text-center'>
                                         <h3 className='text-[22px] font-semibold'>ข่าวเด็ดเลขดัง</h3>
                                     </div>
-                                    <div className='flex gap-5'>
+                                    <div className='flex gap-5 max-540:flex-col'>
                                         {lotteryNews.map((news, index) => (
                                             <div className='bg-white overflow-hidden rounded-md' key={index}>
                                                 <div>
