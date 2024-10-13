@@ -17,12 +17,12 @@ const VarietyNews = () => {
                 <div className='mt-6'>
                     <div className='grid grid-cols-2 max-992:grid-cols-1 gap-x-7 gap-y-5'>
                         {varietyNews.map((news, index) => (
-                            <a key={index} href='#' className={`${index === 0 ? "row-span-3" : "flex max-992:grid max-992:grid-cols-[170px_1fr]"} rounded-md overflow-hidden border border-[#f3f3f3]`}>
-                                <div className={`${index !== 0 ? "max-992:w-[170px]" : ""} w-full relative bg-red-500`} src={news.newsImg}>
-                                    <img className={`${index !== 0 ? "]" : ""} object-cover h-full`} src={news.newsImg} alt="" />
+                            <a key={index} href='#' className={`${index === 0 ? "row-span-3" : "flex max-992:grid max-992:grid-cols-[170px_1fr] max-768:grid-cols-1"} rounded-md overflow-hidden border border-[#f3f3f3]`}>
+                                <div className={`${index !== 0 ? "" : ""} w-full relative bg-red-500`} src={news.newsImg}>
+                                    <img className={`${index !== 0 ? "" : ""} `} src={news.newsImg} alt="" />
                                     <div className='rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center'>
-                                        <IoPlayCircleOutline className={`${index !== 0 ? "text-4xl" : "text-[56px] max-992:text-[64px]"} text-white z-[1]`}/>
-                                        <div className={`${index !== 0 ? "size-[30px]" : "size-[46px]"} absolute bg-[rgba(0,0,0,0.5)] rounded-full`}>
+                                        <IoPlayCircleOutline className={`${index !== 0 ? "text-4xl max-768:text-[64px]" : "text-[56px] max-992:text-[64px]"} text-white z-[1]`}/>
+                                        <div className={`${index !== 0 ? "size-[30px] max-768:size-[46px]" : "size-[46px]"} absolute bg-[rgba(0,0,0,0.5)] rounded-full`}>
 
                                         </div>
                                     </div>

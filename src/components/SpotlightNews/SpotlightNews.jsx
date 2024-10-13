@@ -64,7 +64,7 @@ const SpotlightNews = () => {
                             <div className={`${news.newsDesc !== "" ? 'col-span-4 max-992:col-span-2' : ''}`} key={index}>
                                 <div className={`${news.newsDesc !== "" ? 'flex flex-row-reverse max-768:flex-col' : ''} gap-4`}>
                                     <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''} h-full rounded-md overflow-hidden`}>
-                                        <img className='h-full' src={news.newsCover} alt="" /> 
+                                        <img className='' src={news.newsCover} alt="" /> 
                                     </div>
                                     <div className={`${news.newsDesc !== "" ? 'basis-1/2' : ''} relative`}>
                                         <div className='relative'>

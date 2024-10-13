@@ -35,7 +35,7 @@ const LongpungSection = () => {
                                     <p className='mt-[35px] text-sm text-[#666]'>{food.date}</p>
                                 </div>
                                 <div className='w-1/2 max-992:w-full '>
-                                    <img className='h-full object-cover' src={food.menuImage} alt="" />
+                                    <img className='' src={food.menuImage} alt="" />
                                 </div>
                             </a>
                         ))}
@@ -69,7 +69,7 @@ const LongpungSection = () => {
                                     <a href="#" className='bg-white rounded-md overflow-hidden' key={index}>
                                         <div className='grid grid-cols-[200px_1fr] max-992:grid-cols-[50%_1fr]  max-540:grid-cols-1'>
                                             <div>
-                                                <img className='h-full' src={data.foodImage} alt="" />
+                                                <img className='' src={data.foodImage} alt="" />
                                             </div>
                                             <div className='px-[10px] py-[5px] flex flex-col'>
                                                 <div className='flex items-center'>
