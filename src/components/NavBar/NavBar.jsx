@@ -6,6 +6,7 @@ import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import MenuSidebar from '../MenuSidebar/MenuSidebar';
 import { ScreenWidthContext } from '../../context/ScreenWidth';
+import app_amarin_icon from '../../assets/app_amarin_icon.png'; 
 
 const NavBar = () => {
 
@@ -132,9 +133,14 @@ const NavBar = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='flex items-center justify-center gap-3 pr-[15px] max-768:gap-0 max-768:pr-0'>
-                        <div className='flex items-center gap-3'>
-                            <div className='border-[2px] border-[#444] w-[70px] h-[35px] rounded-[10px]'>
+                    <div className='flex items-center justify-center pr-[15px] max-768:gap-0 max-768:pr-0'>
+                        <div className='flex items-center relative'>
+                            <div className='hidden max-768:inline-block'>
+                                <a href="#">
+                                    <img className='h-[30px]' src={app_amarin_icon} alt="" />
+                                </a>
+                            </div>
+                            <div className='border-[2px] border-[#444] w-[70px] h-[35px] max-768:h-[30px] rounded-[10px] absolute z-[-10] right-[90px]'>
                                 <a className='flex items-center justify-center uppercase h-full font-semibold' href="#">
                                     <div className='size-[9px] rounded-full bg-[#fe0200] mr-[5px]'>
 
@@ -142,20 +148,21 @@ const NavBar = () => {
                                     Live
                                 </a>
                             </div>
-                            <div className='max-768:hidden flex items-center gap-1'>
+                            <div className='max-768:hidden flex items-center justify-end gap-1 pl-2'>
                                 <IoSearchSharp size={20}/>
-                                <p className='font-semibold'>ค้นหา</p>
+                                <input className='p-2 bg-white w-[55px] duration-200 focus:border focus:w-full placeholder:text-black outline-none' type="text" placeholder='ค้นหา'/>
+                                {/* <p className='font-semibold'>ค้นหา</p> */}
                             </div>
-                            </div>
-                        <div>
-                        <div className='hidden max-1440:flex items-center max-768:hidden'>
-                            {toggleOpen ? 
-                                <IoClose className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>
-                                    :
-                                <IoMdMenu className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>    
-                            }
                         </div>
-                    </div>
+                        <div>
+                            <div className='hidden max-1440:flex items-center max-768:hidden'>
+                                {toggleOpen ? 
+                                    <IoClose className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>
+                                        :
+                                    <IoMdMenu className='text-3xl cursor-pointer' onClick={() => toggleSideBar()}/>    
+                                }
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,13 @@
 import React from 'react'
 import { BsShieldFillCheck } from "react-icons/bs";
 import './footer.css';
+import icon_fb from "../../assets/Social_Icon/icon-fb.svg";
+import icon_ig from "../../assets/Social_Icon/icon-ig.svg";
+import icon_line from "../../assets/Social_Icon/icon-line.svg";
+import icon_rss from "../../assets/Social_Icon/icon-rss.svg";
+import icon_tiktok from "../../assets/Social_Icon/icon-tiktok.svg";
+import icon_x from "../../assets/Social_Icon/icon-x.svg";
+import icon_yt from "../../assets/Social_Icon/icon-yt.svg";
 
 const Footer = () => {
     return (
@@ -13,25 +20,25 @@ const Footer = () => {
                         </div>
                         <div className='flex gap-[10px] max-768:hidden'>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
+                                <img className='size-[35px]' src={icon_fb} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
+                                <img className='size-[35px]' src={icon_x} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
+                                <img className='size-[35px]' src={icon_line} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
+                                <img className='size-[35px]' src={icon_yt} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
+                                <img className='size-[35px]' src={icon_ig} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
+                                <img className='size-[35px]' src={icon_tiktok} alt="" />
                             </a>
                             <a href="#">
-                                <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-rss.svg" alt="" />
+                                <img className='size-[35px]' src={icon_rss} alt="" />
                             </a>
                         </div>
                     </div>
@@ -126,25 +133,25 @@ const Footer = () => {
                             <div className='hidden max-768:block'>
                                 <div className='flex gap-[10px] w-full justify-center border-b pb-4'>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_fb} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_x} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_line} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_yt} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_ig} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_tiktok} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img className='size-[35px]' src="https://static.amarintv.com/assets/images/icon-rss.svg" alt="" />
+                                        <img className='size-[35px]' src={icon_rss} alt="" />
                                     </a>
                                 </div>
                                 <div>

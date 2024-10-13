@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 import { IoSearch } from "react-icons/io5";
+import icon_fb from "../../assets/Social_Icon/icon-fb.svg";
+import icon_ig from "../../assets/Social_Icon/icon-ig.svg";
+import icon_line from "../../assets/Social_Icon/icon-line.svg";
+import icon_tiktok from "../../assets/Social_Icon/icon-tiktok.svg";
+import icon_x from "../../assets/Social_Icon/icon-x.svg";
+import icon_yt from "../../assets/Social_Icon/icon-yt.svg";
 
 const MenuSidebar = ({ toggleOpen, setToggleOpen }) => {
 
@@ -195,22 +201,22 @@ const MenuSidebar = ({ toggleOpen, setToggleOpen }) => {
                         </div>
                         <div className='flex'>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-fb.svg" alt="" />
+                                <img className='size-[35px]' src={icon_fb} alt="" />
                             </a>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-x.svg" alt="" />
+                                <img className='size-[35px]' src={icon_x} alt="" />
                             </a>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-line.svg" alt="" />
+                                <img className='size-[35px]' src={icon_line} alt="" />
                             </a>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-yt.svg" alt="" />
+                                <img className='size-[35px]' src={icon_yt} alt="" />
                             </a>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-ig.svg" alt="" />
+                                <img className='size-[35px]' src={icon_ig} alt="" />
                             </a>
                             <a className='mr-[5px]' href="#">
-                                <img className='size-[33px]' src="https://static.amarintv.com/assets/images/icon-tiktok.svg" alt="" />
+                                <img className='size-[35px]' src={icon_tiktok} alt="" />
                             </a>
                         </div>
                     </div>

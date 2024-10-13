@@ -74,7 +74,7 @@ const LotterySection = () => {
                                     </div>
                                     <div className='flex gap-5 max-540:flex-col'>
                                         {lotteryNews.map((news, index) => (
-                                            <div className='bg-white overflow-hidden rounded-md' key={index}>
+                                            <a href="#" className='bg-white overflow-hidden rounded-md hover:translate-y-[-5px] duration-300' key={index}>
                                                 <div>
                                                     <img src={news.mewsImg} alt="" />
                                                 </div>
@@ -82,7 +82,7 @@ const LotterySection = () => {
                                                     <p className='line-clamp-2 text-base font-medium'>{news.newsTopic}</p>
                                                     <p className='mt-[15px] text-xs text-[#212121]'>{news.newsDate}</p>
                                                 </div>
-                                            </div>
+                                            </a>
                                         ))}
                                     </div>
                                 </div>                                  

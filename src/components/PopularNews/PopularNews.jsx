@@ -41,11 +41,11 @@ const PopularNews = () => {
                     >   
                         {popularNews.map((news, index) => (
                                 <SwiperSlide key={index}>
-                                    <a href="#" >
+                                    <a href="#">
                                         <div className='border h-full rounded-md overflow-hidden pb-4'>
                                             <img src={news.newsImage} alt="" />
                                             <div className='mt-5 flex'>
-                                                <div className='text-[55px] w-[20%] font-semibold border-r px-4 border-black float-left text-center'>
+                                                <div className='text-[55px] w-auto font-semibold border-r px-4 border-black float-left text-center'>
                                                     {index + 1}
                                                 </div>
                                                 <div className='w-[80%] flex flex-col justify-between px-[10px]'>

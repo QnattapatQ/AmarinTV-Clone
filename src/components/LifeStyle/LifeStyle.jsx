@@ -51,7 +51,7 @@ const LifeStyle = () => {
                         <div className='flex flex-col justify-between'>
                             <div>
                                 <div className='flex flex-wrap gap-4 text-lg max-768:text-sm max-992:hidden'>
-                                    <button className='text-nowrap text-[#444]'>ล่าสุด</button>
+                                    <button className='text-nowrap font-semibold text-xl text-black border-b-[3px] border-[#f0b102]'>ล่าสุด</button>
                                     <button className='text-nowrap text-[#444]'>ดูดวง</button>
                                     <button className='text-nowrap text-[#444]'>บ้านและสวน</button>
                                     <button className='text-nowrap text-[#444]'>สุขภาพและความงาม</button>

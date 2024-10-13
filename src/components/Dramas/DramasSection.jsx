@@ -17,7 +17,7 @@ const DramasSection = () => {
                 <div className='mt-8'>
                     <div className='grid grid-cols-4 gap-6 max-992:grid-cols-2 max-992:gap-3'>
                         {dramasData.map((data, index) => (
-                            <a href='#' className={`${data.dramaDesc !== "" ? 'row-span-2 col-span-2' : ''} bg-[#1e1e1e] overflow-hidden rounded-md`} key={index}>
+                            <a href='#' className={`${data.dramaDesc !== "" ? 'row-span-2 col-span-2' : ''} bg-[#1e1e1e] overflow-hidden rounded-md hover:translate-y-[-5px] duration-300`} key={index}>
                                 <div>
                                     <img src={data.dramaImage} alt="" />
                                 </div>

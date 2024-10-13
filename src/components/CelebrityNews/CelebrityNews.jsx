@@ -16,7 +16,7 @@ const CelebrityNews = () => {
                 <div className='mt-8'>
                     <div className='grid grid-cols-4 gap-6 max-768:grid-cols-1 max-768:gap-4'>
                         {celebrityNews.map((news, index) =>  (
-                            <div className='border border-[#f3f3f3] rounded-md overflow-hidden hover:translate-y-[-5px] duration-300' key={index}>
+                            <a href='#' className='border border-[#f3f3f3] rounded-md overflow-hidden hover:translate-y-[-5px] duration-300' key={index}>
                                 <div>
                                     <img src={news.newsCover} alt="" />
                                 </div>
@@ -25,7 +25,7 @@ const CelebrityNews = () => {
                                     <p className='text-xs mt-4 text-[#555] font-light'>{news.newsData}</p>
                                     <p className='my-[14px] text-[#555] font-light text-sm'>{news.newsDesc}</p>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                     <div  className='hidden max-768:block w-full mt-6 mb-3'>

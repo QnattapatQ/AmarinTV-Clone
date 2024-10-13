@@ -28,7 +28,7 @@ const AutomotiveNews = () => {
                         <div>
                             <div className='grid grid-cols-3 gap-[30px] max-768:grid-cols-1'>
                                 {automotiveNews.map((news, index) => (
-                                    <a href='#' className={`${index === 0 ? "col-span-3 max-768:col-span-1 flex gap-[30px] max-768:gap-0 max-768:flex-col bg-[#151515] max-768:rounded-lg" : "max-768:grid max-768:grid-cols-[30%_auto] max-768:gap-4"}`}>
+                                    <a key={index} href='#' className={`${index === 0 ? "col-span-3 max-768:col-span-1 flex gap-[30px] max-768:gap-0 max-768:flex-col bg-[#151515] max-768:rounded-lg" : "max-768:grid max-768:grid-cols-[30%_auto] max-768:gap-4"}`}>
                                         <div className='rounded-md overflow-hidden'>
                                             <img src={news.newsImage} alt="" />
                                         </div>
